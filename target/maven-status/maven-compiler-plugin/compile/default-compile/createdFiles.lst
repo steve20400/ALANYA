@@ -2,7 +2,10 @@ com/alanya/repository/CallHistoryRepository.class
 com/alanya/controller/AuthController.class
 com/alanya/config/CorsConfig.class
 com/alanya/model/CallHistory.class
+com/alanya/controller/UserController.class
+com/alanya/dto/request/MessageRequest.class
 com/alanya/config/WebRtcConfig.class
+com/alanya/dto/response/CallResponse.class
 com/alanya/dto/response/UserResponse.class
 com/alanya/AlanyaApplication.class
 com/alanya/service/AuthService.class
@@ -17,7 +20,14 @@ com/alanya/model/Conversation.class
 com/alanya/model/Contact.class
 com/alanya/service/UserService.class
 com/alanya/security/UserDetailsServiceImpl.class
+com/alanya/dto/request/CallRequest.class
 com/alanya/dto/request/RegisterRequest.class
 com/alanya/config/SecurityConfig.class
 com/alanya/model/Message.class
+com/alanya/controller/ChatController.class
+com/alanya/service/CallService.class
 com/alanya/repository/UserRepository.class
+com/alanya/controller/CallController.class
+com/alanya/dto/response/ConversationResponse.class
+com/alanya/service/ChatService.class
+com/alanya/dto/response/MessageResponse.class

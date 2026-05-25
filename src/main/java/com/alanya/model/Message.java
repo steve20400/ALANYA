@@ -29,18 +29,46 @@ public class Message {
     @Column(name = "sendAt")
     private LocalDateTime sendAt;
     
+    @Column(name = "readAt")
+    private LocalDateTime readAt;
+    
+    @Column(name = "mediaUrl")
+    private String mediaUrl;
+    
+    @Column(name = "isDeleted")
+    private Boolean isDeleted = false;
+    
+    @Column(name = "isEdited")
+    private Boolean isEdited = false;
+    
+    @Column(name = "replyToID")
+    private Integer replyToId;
+    
+    // Getters
     public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
     public Integer getSenderId() { return senderId; }
-    public void setSenderId(Integer senderId) { this.senderId = senderId; }
     public Integer getConversationId() { return conversationId; }
-    public void setConversationId(Integer conversationId) { this.conversationId = conversationId; }
     public String getContent() { return content; }
-    public void setContent(String content) { this.content = content; }
     public Short getType() { return type; }
-    public void setType(Short type) { this.type = type; }
     public Boolean getStatus() { return status; }
-    public void setStatus(Boolean status) { this.status = status; }
     public LocalDateTime getSendAt() { return sendAt; }
+    public LocalDateTime getReadAt() { return readAt; }
+    public String getMediaUrl() { return mediaUrl; }
+    public Boolean getIsDeleted() { return isDeleted; }
+    public Boolean getIsEdited() { return isEdited; }
+    public Integer getReplyToId() { return replyToId; }
+    
+    // Setters
+    public void setId(Long id) { this.id = id; }
+    public void setSenderId(Integer senderId) { this.senderId = senderId; }
+    public void setConversationId(Integer conversationId) { this.conversationId = conversationId; }
+    public void setContent(String content) { this.content = content; }
+    public void setType(Short type) { this.type = type; }
+    public void setStatus(Boolean status) { this.status = status; }
     public void setSendAt(LocalDateTime sendAt) { this.sendAt = sendAt; }
+    public void setReadAt(LocalDateTime readAt) { this.readAt = readAt; }
+    public void setMediaUrl(String mediaUrl) { this.mediaUrl = mediaUrl; }
+    public void setIsDeleted(Boolean isDeleted) { this.isDeleted = isDeleted; }
+    public void setIsEdited(Boolean isEdited) { this.isEdited = isEdited; }
+    public void setReplyToId(Integer replyToId) { this.replyToId = replyToId; }
 }

@@ -26,21 +26,29 @@ public class CallHistory {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
     
+    @Column(name = "start_time")
+    private LocalDateTime startTime;
+    
     @Column(name = "duree")
     private Integer duration;
     
+    // Getters
     public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
     public Integer getCallerId() { return callerId; }
-    public void setCallerId(Integer callerId) { this.callerId = callerId; }
     public Integer getReceiverId() { return receiverId; }
-    public void setReceiverId(Integer receiverId) { this.receiverId = receiverId; }
     public Short getType() { return type; }
-    public void setType(Short type) { this.type = type; }
     public Short getStatus() { return status; }
-    public void setStatus(Short status) { this.status = status; }
     public LocalDateTime getCreatedAt() { return createdAt; }
-    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    public LocalDateTime getStartTime() { return startTime; }
     public Integer getDuration() { return duration; }
+    
+    // Setters
+    public void setId(Long id) { this.id = id; }
+    public void setCallerId(Integer callerId) { this.callerId = callerId; }
+    public void setReceiverId(Integer receiverId) { this.receiverId = receiverId; }
+    public void setType(Short type) { this.type = type; }
+    public void setStatus(Short status) { this.status = status; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    public void setStartTime(LocalDateTime startTime) { this.startTime = startTime; }
     public void setDuration(Integer duration) { this.duration = duration; }
 }
